@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <title>About me</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script>
+
+        $(function () {
+            //create instance
+            $('.chart').easyPieChart({
+                // animate: 2000
+            });
+
+        });
+    </script>
+    <script src="js/filter.js"></script>
+
+    <header id="header-inner">
+        <div class="container">
+            <nav id="main-nav">
+                <img src="img/logo.png" alt="My Portfolio" id="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="current">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section A: Info -->
+    <section id="about-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">
+                Let me tell you a little about myself and what I do...
+            </p>
+            <div class="about-info">
+                <img src="img/about.jpg" alt="" class="bio-image" />
+                <div class="bio bg-light">
+                    <h4>Your Project Is In Safe Hands</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
+                        nesciunt unde nihil voluptatum commodi consequuntur molestiae?
+                        Fugiat, perspiciatis reprehenderit. Architecto delectus vitae
+                        deserunt!
+                    </p>
+                </div>
+
+                <div class="award-1">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award One</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                        magni!
+                    </p>
+                </div>
+                <div class="award-2">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award Two</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                        magni!
+                    </p>
+                </div>
+                <div class="award-3">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award Three</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                        magni!
+                    </p>
+                </div>
+
+            </div>
+    </section>
+    <section>
+
+    </section>
+    <!-- Section B progress Bar -->
+    <section id="about-b" class="bg-dark py-3">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div id="myBtnContainer">
+                <button class="btn-light active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn-light" onclick="filterSelection('python')"> python</button>
+                <button class="btn-light" onclick="filterSelection('GameDevelopment')"> GameDevelopment</button>
+            </div>
+            <div class="piechart-skills">
+                <div class="each-skill show filterDiv python">
+                    <h4>Photography:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  python">
+                    <h4>Photography:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv show gamedevelopment python">
+                    <h4>Photography:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  gamedevelopment">
+                    <h4>Photography:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  python">
+                    <h4>Photography:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  gamedevelopment">
+                    <h4>Photography:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  gamedevelopment">
+                    <h4>Photography:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  gamedevelopment">
+                    <h4>Photography:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+            </div>
+
+
+            <h4>Photography:</h4>
+            <div class="progress">
+                <div style="width:100%"></div>
+            </div>
+            <h4>ADobePhotoshop:</h4>
+            <div class="progress">
+                <div style="width45%"></div>
+            </div>
+            <h4>PHtml:</h4>
+            <div class="progress">
+                <div style="width:10%"></div>
+            </div>
+            <h4>CSS:</h4>
+            <div class="progress">
+                <div style="width:23%"></div>
+            </div>
+            <h4>Wordpress:</h4>
+            <div class="progress">
+                <div style="width:70%"></div>
+            </div>
+            <h4>Game:</h4>
+            <div class="progress">
+                <div style="width:60%"></div>
+            </div>
+            <h4>Photography:</h4>
+            <div class="progress">
+                <div style="width:100%"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Section About c:Labels -->
+    <section id="about-c" class="bg-light py-4">
+        <div class="container">
+            <div class="about-logo">
+                <img src="img/about-logos/logo-envato.png" alt="logo">
+                <img src="img/about-logos/logo-magento.png" alt="logo">
+                <img src="img/about-logos/logo-woocommerce.png" alt="logo">
+                <img src="img/about-logos/logo-wordpress.png" alt="logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About D:Testimonials -->
+    <section id="about-d" class="py-4">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="bottom-line"></div>
+            <p class="lead text-center">Take Look What my clients say...</p>
+            <div class="testimonials">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis, eligendi voluptate
+                        consectetur,
+                        aliquam ex in enim deserunt repudiandae quae officia iusto praesentium! Voluptatum praesentium,
+                        nobis reprehenderit distinctio officia unde!</p>
+                    <ul>
+                        <li><img src="img/testimonials/person1.jpg" alt=""></li>
+                        <li>Martin Person,Munich</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis, eligendi voluptate
+                        consectetur,
+                        aliquam ex in enim deserunt repudiandae quae officia iusto praesentium! Voluptatum praesentium,
+                        nobis reprehenderit distinctio officia unde!</p>
+                    <ul>
+                        <li><img src="img/testimonials/person2.jpg" alt=""></li>
+                        <li>John habibi,New York</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis, eligendi voluptate
+                        consectetur,
+                        aliquam ex in enim deserunt repudiandae quae officia iusto praesentium! Voluptatum praesentium,
+                        nobis reprehenderit distinctio officia unde!</p>
+                    <ul>
+                        <li><img src="img/testimonials/person3.jpg" alt=""></li>
+                        <li>Milad Nazari,Tehran</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis, eligendi voluptate
+                        consectetur,
+                        aliquam ex in enim deserunt repudiandae quae officia iusto praesentium! Voluptatum praesentium,
+                        nobis reprehenderit distinctio officia unde!</p>
+                    <ul>
+                        <li><img src="img/testimonials/person4.jpg" alt=""></li>
+                        <li>Vahid Sadeghi,Shiraz</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy;2019.All Rights Reserved.</p>
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="ai ai-google-scholar-square "></i>
+                <i class="ai ai-cv "></i>
+                <i class="ai ai-pubmed "></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
