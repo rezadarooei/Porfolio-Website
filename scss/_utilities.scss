@@ -115,3 +115,15 @@ input[class^='btn-']:hover{
     display: block;
     margin: 0 auto 1rem auto;
 }
+.link{
+    color:blue;
+    font-style: italic;
+    font-size:1.1rem;
+    &:hover{
+        color: $main-color;
+    }
+}
+.about-paragraph{
+    text-align: justify;
+    text-align: left;
+}
