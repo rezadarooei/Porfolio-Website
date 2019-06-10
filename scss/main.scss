@@ -242,6 +242,7 @@ img{
         .piechart-skills{
             display: grid;
             grid-template-columns: repeat(8,1fr);
+
             margin-bottom: 5rem;
             .chart{
                 position: relative;
@@ -256,6 +257,13 @@ img{
                     top: 0;
                     left: 0;
                 }
+              
+                }
+                .each-skill{
+                    h4{
+                        display: inline;
+                        text-justify: auto;
+                    }
             }
             
             .percent{

@@ -381,6 +381,9 @@ img {
       position: absolute;
       top: 0;
       left: 0; }
+  #about-b .piechart-skills .each-skill h4 {
+    display: inline;
+    text-justify: auto; }
   #about-b .piechart-skills .percent {
     display: inline-block;
     line-height: 110px;
